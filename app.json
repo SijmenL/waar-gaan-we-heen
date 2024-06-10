@@ -1,6 +1,14 @@
 {
   "expo": {
-    "name": "waar-gaan-we-heen",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Geef Waar gaan we heen? toestemming om je locatie te gebruiken."
+        }
+      ]
+    ],
+    "name": "Waar gaan we heen?",
     "slug": "waar-gaan-we-heen",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,6 +30,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "runtimeVersion": {
+      "policy": "nativeVersion"
     }
   }
 }
