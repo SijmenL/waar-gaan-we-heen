@@ -151,9 +151,12 @@ const MapScreen = () => {
                         snapPoints={[100, '90%']}
                         ref={bottomSheetRef}
                         onChange={handleSheetChanges}
+                        backgroundStyle={{
+                            backgroundColor: themeMode === 'light' ? '#fff' : '#1a1a1a',
+                        }}
                     >
-                        <BottomSheetView style={styles.container}>
-                            <Text>Awesome 🎉</Text>
+                        <BottomSheetView>
+                            <Text style={styles.text}>Awesome 🎉</Text>
                         </BottomSheetView>
                     </BottomSheet>
                 </>
